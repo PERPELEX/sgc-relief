@@ -6,7 +6,7 @@ export default function HomeCard() {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div className="relative h-[70vh] poppins-bold rounded-3xl shadow-lg flex flex-col justify-between bg-gradient-to-t from-[#203D3B] to-[#195451] bg-[#203D3B]">
+        <div className="relative h-[70vh] poppins-bold rounded-3xl shadow-lg flex flex-col justify-between bg-gradient-to-t from-[#0E493A] to-[#0f6751] bg-[#203D3B]">
             {/* Heading */}
             <div className="flex flex-col z-30">
                 <h1 className="text-[5.5rem] tracking-wide py-10 text-center text-white">Gaza Direct Aid Portal</h1>
@@ -32,12 +32,14 @@ export default function HomeCard() {
             </div>
 
             <div className="flex flex-row justify-between items-end px-16 py-12">
-                <p className="w-[29%] text-base font-normal">Make a real difference by directly connecting with and supporting Palestinian families in need. Your trusted donations will reach those who need it most, ensuring your generosity has a meaningful impact.</p>
+                <p className="w-[29%] text-base font-normal">
+                    Make a real difference by directly connecting with and supporting Palestinian families in need. Your trusted donations will reach those who need it most, ensuring your generosity has a meaningful impact.
+                </p>
 
                 {/* button */}
                 <Link href="">
                     <div
-                        className="flex flex-row justify-between items-center gap-4 bg-black p-4 px-6 rounded-[4rem] hover:bg-white hover:text-black transition-all ease-in-out duration-200"
+                        className="flex flex-row justify-between items-center gap-4 bg-black p-4 px-6 rounded-[4rem] shadow-xl hover:bg-white hover:text-black transition-all ease-in-out duration-200"
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                     >
@@ -46,7 +48,7 @@ export default function HomeCard() {
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
-                            strokeWidth={1.5}
+                            strokeWidth="2"
                             stroke="currentColor"
                             className={`size-6 ${isHovered ? 'animate-move-right' : ''}`}
                         >

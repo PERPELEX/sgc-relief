@@ -1,5 +1,6 @@
 import Footer2 from '@/components/Footer2';
 import Header3 from '@/components/Header3';
+import IntroCard from '@/components/IntroCard';
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import "@/styles/globals.css";
@@ -54,6 +55,7 @@ export default function App({ Component, pageProps }) {
       <Headroom>
         <Header3 />
       </Headroom>
+      <IntroCard />
 
       <Component {...pageProps} />
       <Footer2 />
