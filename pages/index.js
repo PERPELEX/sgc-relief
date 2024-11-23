@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
-import FAQs from "@/components/FAQs";
 import Wrapper from "@/components/Wrapper";
 import { useInView } from "react-hook-inview";
-import { motion } from "framer-motion";
-import HowYouCanHelp from "@/components/HowYouCanHelp";
-import Reviews from "@/components/Reviews";
-import ContactAndSubscribe from "@/components/ContactAndSubscribe";
+import HomeCard from "@/components/HomeCard";
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -13,12 +10,9 @@ export default function Home() {
   const [ref, inView] = useInView();
 
   return (
-    <main className="overflow-x-hidden w-screen z-20">
+    <main className="overflow-hidden w-[100%] z-20">
       <Wrapper className="bg-blue-50 pt-20">
-        <HowYouCanHelp />
-        <FAQs />
-        <ContactAndSubscribe />
-        <Reviews />
+        <HomeCard />
       </Wrapper>
     </main>
   );
