@@ -24,7 +24,7 @@ const CounterBox = ({counter}) => {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-[6.5rem] font-bold"
         />
       )}
-      <span className="mt-2 text-sm sm:text-base md:text-2xl text-nowrap">{counter.label}</span>
+      <span className="mt-2 text-sm sm:text-base md:text-2xl text-nowrap">{counter.label}<span className="text-sm font-mono"> / Month</span></span>
     </div>
   );
 };

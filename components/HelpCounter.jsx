@@ -1,5 +1,6 @@
 import React from "react";
 import CounterBox from "@/components/CounterBox";
+import Heading from "@/components/Heading";
 
 export default function HelpCounter() {
 
@@ -11,11 +12,7 @@ export default function HelpCounter() {
 
   return (
     <div className="bg-[url('/a5.jpeg')] bg-cover bg-center h-[30vh] max-h-[500px] min-h-[450px] px-28 flex flex-col justify-center gap-10 ">
-      <div className="flex flex-row justify-center items-center gap-6">
-        <div className="w-20 h-3 bg-green-800 rounded-[2px] shadow-2xl"></div>
-        <h2 className="text-center text-5xl font-bold tracking-wider drop-shadow-2xl">Our Efforts</h2>
-        <div className="w-20 h-3 bg-green-800 rounded-[2px] shadow-2xl"></div>
-      </div>
+      <Heading className="text-white" text="Our Efforts" />
       <div className="flex flex-row justify-between items-center">
         {counters.map(counter => (<CounterBox key={counter.id} counter={counter} />))}
       </div>
