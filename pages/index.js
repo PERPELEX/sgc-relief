@@ -3,8 +3,6 @@ import Wrapper from "@/components/Wrapper";
 import { useInView } from "react-hook-inview";
 import Services from "@/components/Services";
 
-
-
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);

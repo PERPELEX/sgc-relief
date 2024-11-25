@@ -6,7 +6,7 @@ export default function DirectAid() {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div className="relative h-auto md:h-[70vh] rounded-3xl shadow-lg flex flex-col justify-between bg-gradient-to-t from-[#0E493A] to-[#0f6751] bg-[#203D3B] p-6 md:p-0">
+        <div className="relative z-0 h-auto md:h-[70vh] rounded-3xl shadow-lg flex flex-col justify-between bg-gradient-to-t from-[#0E493A] to-[#0f6751] bg-[#203D3B] p-6 md:p-0">
             {/* Heading */}
             <div className="flex flex-col z-30 text-center">
                 <h1 className="text-[2.5rem] sm:text-[4rem] md:text-[5.5rem] font-semibold tracking-wide py-6 md:py-10 text-white">
@@ -79,7 +79,7 @@ export default function DirectAid() {
                 {/* Button */}
                 <Link href="">
                     <div
-                        className="flex flex-row justify-between items-center gap-4 bg-black text-white font-semibold p-4 px-6 rounded-full shadow-xl hover:bg-white hover:text-black transition-all ease-in-out duration-200"
+                        className="flex flex-row justify-between items-center gap-4 border-2 text-white font-semibold p-4 px-6 rounded-full hover:bg-white hover:text-[#0E493A] transition-all ease-in-out duration-200"
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                     >

@@ -1,32 +1,24 @@
-// import React from 'react';
-// import CountUp from 'react-countup';
+import React from "react";
+import CounterBox from "@/components/CounterBox";
 
-// const SquareCounters = () => {
-//   // Define the counters and their end values
-//   const counters = [
-//     { id: 1, endValue: 150, label: "Counter 1" },
-//     { id: 2, endValue: 300, label: "Counter 2" },
-//     { id: 3, endValue: 450, label: "Counter 3" },
-//   ];
+export default function HelpCounter() {
 
-//   return (
-//     <div className="flex flex-wrap justify-center items-center gap-4 p-4">
-//       {counters.map((counter) => (
-//         <div
-//           key={counter.id}
-//           className="flex flex-col justify-center items-center bg-blue-500 text-white w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded shadow-lg"
-//         >
-//           <CountUp
-//             start={0}
-//             end={counter.endValue}
-//             duration={2.5}
-//             className="text-3xl sm:text-4xl md:text-5xl font-bold"
-//           />
-//           <span className="mt-2 text-sm sm:text-base md:text-lg">{counter.label}</span>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
+  const counters = [
+    { id: 1, endValue: 150, label: "Meals Fed", duration: "5" },
+    { id: 2, endValue: 300, label: "Clothes Donated", duration: "5" },
+    { id: 3, endValue: 450, label: "People Medically Assisted", duration: "5" },
+  ];
 
-// export default SquareCounters;
+  return (
+    <div className="bg-[url('/a5.jpeg')] bg-cover bg-center h-[30vh] max-h-[500px] min-h-[450px] px-28 flex flex-col justify-center gap-10 ">
+      <div className="flex flex-row justify-center items-center gap-6">
+        <div className="w-20 h-3 bg-green-800 rounded-[2px] shadow-2xl"></div>
+        <h2 className="text-center text-5xl font-bold tracking-wider drop-shadow-2xl">Our Efforts</h2>
+        <div className="w-20 h-3 bg-green-800 rounded-[2px] shadow-2xl"></div>
+      </div>
+      <div className="flex flex-row justify-between items-center">
+        {counters.map(counter => (<CounterBox key={counter.id} counter={counter} />))}
+      </div>
+    </div>
+  );
+}

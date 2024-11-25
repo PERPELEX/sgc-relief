@@ -24,7 +24,7 @@ const IntroCard = () => {
                             </button>
                         </Link>
                         <Link href="">
-                            <button className="text-lg md:text-xl font-bold bg-transparent border border-white px-6 md:px-8 py-3 md:py-4 rounded-full text-white hover:bg-white hover:text-[#0E493A] transition-all ease-in-out duration-200">
+                            <button className="text-lg md:text-xl font-bold bg-transparent border-2 border-white px-6 md:px-8 py-3 md:py-4 rounded-full text-white hover:bg-white hover:text-[#0E493A] transition-all ease-in-out duration-200">
                                 Connect with a Family
                             </button>
                         </Link>
