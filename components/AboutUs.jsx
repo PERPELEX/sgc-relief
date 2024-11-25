@@ -5,7 +5,6 @@ import Link from "next/link"
 export default function AboutUs() {
 
     const [isHovered, setIsHovered] = useState(false);
-    const [isHovered2, setIsHovered2] = useState(false);
     
     return (
         <span>
@@ -37,7 +36,7 @@ export default function AboutUs() {
 
                             <Link href="">
                                 <div
-                                    className="flex flex-row gap-4 w-48 justify-center items-center p-4 border-2 rounded-full ml-auto font-semibold hover:bg-white hover:text-[#0E493A]  "
+                                    className="flex flex-row gap-4 w-48 justify-center items-center p-4 border-2 rounded-full ml-auto font-semibold hover:bg-white hover:text-[#0E493A] transition-all ease-in-out duration-200  "
                                     onMouseEnter={() => setIsHovered(true)}
                                     onMouseLeave={() => setIsHovered(false)}
                                 >
@@ -83,25 +82,12 @@ export default function AboutUs() {
 
                             <Link href="">
                                 <div
-                                    className="flex flex-row gap-4 w-40 justify-center items-center p-4 border-2 rounded-full ml-auto font-semibold hover:bg-white hover:text-[#0E493A]  "
-                                    onMouseEnter={() => setIsHovered2(true)}
-                                    onMouseLeave={() => setIsHovered2(false)}
+                                    className="flex flex-row gap-4 w-32 justify-center items-center p-3 bg-[#0f6751] rounded-full ml-auto font-semibold hover:bg-[#144639] hover:text-[#fff] transition-all ease-in-out duration-200 "
+                                    style={{
+                                        boxShadow: "0px 10px 30px rgba(0,0,0,.2)"
+                                    }}
                                 >
                                     <p>Services</p>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        strokeWidth="2"
-                                        stroke="currentColor"
-                                        className={`size-6 ${isHovered2 ? "animate-move-right" : ""}`}
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                                        />
-                                    </svg>
                                 </div>
                             </Link>
                         </div>

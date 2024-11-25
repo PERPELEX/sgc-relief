@@ -3,6 +3,7 @@ import Wrapper from "@/components/Wrapper";
 import { useInView } from "react-hook-inview";
 import Services from "@/components/Services";
 import AboutUs from "@/components/AboutUs";
+import FAQs from "@/components/FAQs";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -14,6 +15,7 @@ export default function Home() {
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         <AboutUs />
         <Services />
+        <FAQs />
       </Wrapper>
     </main>
   );

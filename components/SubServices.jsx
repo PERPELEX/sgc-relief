@@ -4,10 +4,10 @@ import SubService from "@/components/SubService";
 
 const services = [
     {
-        title: "Donations",
-        description: "Donate Daily Essentials",
+        title: "Food Camps",
+        description: "Serving Hot Meals",
         bgColor: " bg-gradient-to-t from-[#0e56a8] to-[#3c6ca3]",
-        icon: "❤️‍🩹", // Replace with an actual SVG/icon
+        icon: "🥖", // Replace with an actual SVG/icon
     },
     {
         title: "Cloth Drive",
@@ -23,7 +23,7 @@ const services = [
     },
     {
         title: "Monetary Help",
-        description: "Helping Monetarily for Needs",
+        description: "Helping For Monetary Needs",
         bgColor: "bg-gradient-to-t from-[#72ba44] to-[#8aba6c]",
         icon: "💵", // Replace with an actual SVG/icon
     },

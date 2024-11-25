@@ -21,10 +21,10 @@ const CounterBox = ({counter}) => {
           start={0}
           end={counter.endValue}
           duration={counter.duration}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-[6.5rem] font-bold"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-[5.5rem] font-bold"
         />
       )}
-      <span className="mt-2 text-sm sm:text-base md:text-2xl text-nowrap">{counter.label}<span className="text-sm font-mono"> / Month</span></span>
+      <span className="mt-2 text-sm sm:text-base md:text-xl text-nowrap">{counter.label}<span className="text-sm font-mono"> / Month</span></span>
     </div>
   );
 };

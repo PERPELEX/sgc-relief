@@ -72,8 +72,10 @@ export default function DirectAid() {
             {/* Description and Button */}
             <div className="flex flex-col md:flex-row justify-between items-end px-4 md:px-16 py-8 gap-6">
                 {/* Description */}
-                <p className="text-center md:text-left text-sm sm:text-base md:text-lg font-normal md:w-[30%]">
-                    Make a real difference by directly connecting with and supporting Palestinian families in need. Your trusted donations will reach those who need it most, ensuring your generosity has a meaningful impact.
+                <p className="text-center md:text-left text-sm sm:text-base md:text-base font-normal md:w-[30%]">
+                    Make a real difference by directly connecting with and supporting Palestinian families in need. 
+                    Your trusted donations will reach those who need it most, ensuring your generosity has a meaningful
+                     impact.
                 </p>
 
                 {/* Button */}

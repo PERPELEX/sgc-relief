@@ -5,9 +5,9 @@ import Heading from "@/components/Heading";
 export default function HelpCounter() {
 
   const counters = [
-    { id: 1, endValue: 150, label: "Meals Fed", duration: "5" },
-    { id: 2, endValue: 300, label: "Clothes Donated", duration: "5" },
-    { id: 3, endValue: 450, label: "People Medically Assisted", duration: "5" },
+    { id: 1, endValue: 20000, label: "Meals Fed", duration: "5" },
+    { id: 2, endValue: 17600, label: "Clothes Donated", duration: "5" },
+    { id: 3, endValue: 4500, label: "People Medically Assisted", duration: "5" },
   ];
 
   return (
