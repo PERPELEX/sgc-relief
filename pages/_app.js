@@ -1,17 +1,11 @@
-import Footer2 from '@/components/Footer2';
-import Header3 from '@/components/Header3';
-import IntroCard from '@/components/IntroCard';
-import HelpCounter from "@/components/HelpCounter";
+import Footer2 from "@/components/Footer2";
+import Header3 from "@/components/Header3";
+
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import "@/styles/globals.css";
 import Head from "next/head";
-import {
-  useState,
-  useEffect,
-  createContext,
-  useContext,
-} from "react";
+import { useState, useEffect, createContext, useContext } from "react";
 import Headroom from "react-headroom";
 import Chatbot from "@/components/Chatbot";
 
@@ -51,10 +45,9 @@ export default function App({ Component, pageProps }) {
       <Headroom>
         <Header3 />
       </Headroom>
-      <IntroCard />
 
       <Component {...pageProps} />
-      <HelpCounter/>
+
       <Footer2 />
     </>
   );
