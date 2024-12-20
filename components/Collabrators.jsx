@@ -10,7 +10,8 @@ export default function Collab() {
           <p className="text-lg leading-relaxed text-gray-700 mb-8">
             We are collaborating with
             <span className="font-semibold text-black"> Shab-e-AbiTalib</span> and
-            <span className="font-semibold text-black"> Friends of Palestine</span> to provide
+            <span className="font-semibold text-black"> Friends of Palestine</span> 
+            to provide
             critical aid to the people of Gaza. Our primary role is to raise and collect funds,
             which are then directed to our trusted partners actively working on the ground to deliver
             essential assistance. We are committed to doing everything in our power to support this
@@ -18,6 +19,17 @@ export default function Collab() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+          
+          <div className="group relative flex flex-col items-center gap-3">
+            <Image
+              src="/shab-logo.png"
+              width={150}
+              height={150}
+              alt="Shab-e-AbiTalib Logo"
+              className="rounded-full border-4 border-[#22C55E] shadow-md group-hover:scale-110 transition-transform duration-300"
+            />
+            <p className="text-black font-semibold text-lg">Shab-e-AbiTalib</p>
+          </div>
           <div className="group relative flex flex-col items-center gap-3">
             <Image
               src="/save-gaza-logo.png"
@@ -30,13 +42,13 @@ export default function Collab() {
           </div>
           <div className="group relative flex flex-col items-center gap-3">
             <Image
-              src="/shab-logo.png"
+              src="/fop.jpg"
               width={150}
               height={150}
-              alt="Shab-e-AbiTalib Logo"
+              alt="FOP Logo"
               className="rounded-full border-4 border-[#22C55E] shadow-md group-hover:scale-110 transition-transform duration-300"
             />
-            <p className="text-black font-semibold text-lg">Shab-e-AbiTalib</p>
+            <p className="text-black font-semibold text-lg">Friends Of Palestine</p>
           </div>
         </div>
       </div>

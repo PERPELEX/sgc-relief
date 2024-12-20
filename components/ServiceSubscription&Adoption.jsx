@@ -8,7 +8,7 @@ export default function ServiceSubscriptionAdoption() {
       <div className=" bg-white rounded-2xl shadow-lg p-8 flex items-center">
         <div
           className="w-[400px] h-[650px] rounded-2xl shadow-lg bg-cover bg-center flex flex-col justify-end"
-          style={{ backgroundImage: `url(/samplePic2.jpg)` }}
+          style={{ backgroundImage: `url(/medical.jpg)` }}
         ></div>
       </div>
 

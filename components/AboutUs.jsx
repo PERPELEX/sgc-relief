@@ -6,37 +6,31 @@ export default function AboutUs() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <span>
-      <Heading className="mb-8 text-[#1a1a1a]" text="About Us" />
+    <div className="py-12 bg-blue-50">
+      <Heading
+        className="mb-10 text-[#1a1a1a] text-5xl font-extrabold text-center"
+        text="About Us"
+      />
 
-      <div className="flex flex-row justify-between items-center gap-8">
-        {/* left */}
-        <div className="w-[57%] h-[60vh] rounded-2xl bg-[#fff] shadow-lg text-black p-8">
-          <h3 className="text-5xl text-center ">Save Gaza Campaign</h3>
-
-          <hr className="border-2 rounded-2xl my-4 border-[#22C55E]" />
-
-          <div className="flex flex-col h-[80%] justify-evenly">
-            <p className="text-lg font-normal pt-4">
-              <span className="font-semibold text-[#22C55E]">
-                Save Gaza Campaign
-              </span>{" "}
-              is a movement of hope and resilience, uniting voices for justice
-              and compassion. Since our inception in November 2023, we strive to
-              uplift the oppressed and foster solidarity among communities,
-              ensuring that every individual feels valued and heard.
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-12 max-w-7xl mx-auto px-6 lg:px-0">
+        {/* Left Section */}
+        <div className="lg:w-[57%] w-full bg-white shadow-xl rounded-3xl overflow-hidden">
+          <div className="h-48 bg-[#22C55E] flex items-center justify-center">
+            <h3 className="text-4xl font-bold text-white">Save Gaza Campaign</h3>
+          </div>
+          <div className="p-8">
+            <p className="text-lg leading-relaxed text-gray-700 mb-8">
+              <span className="font-semibold text-[#22C55E]">Save Gaza Campaign</span> is a movement of hope and resilience, uniting voices for justice and compassion. Since our inception in November 2023, we strive to uplift the oppressed and foster solidarity among communities, ensuring that every individual feels valued and heard.
             </p>
 
-            <br />
-
-            <div className="flex flex-row justify-between items-center ">
-              <p className="font-semibold text-xl">
+            <div className="flex justify-between items-center">
+              <p className="text-xl font-semibold text-gray-800">
                 Join Us in Making a Difference!
               </p>
 
               <Link href="">
                 <div
-                  className="flex flex-row gap-4 w-48 justify-center items-center p-4 rounded-full ml-auto font-semibold bg-[#22C55E] text-white hover:bg-[#D0312D] hover:text-[#fff] transition-all ease-in-out duration-200  "
+                  className="flex items-center gap-4 px-6 py-3 bg-[#22C55E] text-white rounded-full font-semibold shadow-md hover:bg-[#D0312D] transition duration-300"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
@@ -47,9 +41,7 @@ export default function AboutUs() {
                     viewBox="0 0 24 24"
                     strokeWidth="2"
                     stroke="currentColor"
-                    className={`size-6 ${
-                      isHovered ? "animate-move-right" : ""
-                    }`}
+                    className={`w-6 h-6 ${isHovered ? "animate-move-right" : ""}`}
                   >
                     <path
                       strokeLinecap="round"
@@ -63,46 +55,35 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* right */}
-        <div className="w-[41%] h-[70vh] rounded-2xl bg-[#fff] text-black shadow-lg p-8">
-          <h3 className="text-4xl text-center">SGC Relief Activities</h3>
-
-          <hr className="border-2 rounded-2xl my-3 border-[#22C55E]" />
-
-          <div className="flex flex-col h-[80%] justify-evenly">
-            <p className="text-lg font-normal pt-4">
-              <span className="font-semibold text-[#22C55E]">
-                SGC Relief Activities
-              </span>{" "}
-              deals with all donations and relief efforts for the people of
-              Palestine. Our goal is to help the people in need in any way
-              possible and make whatever effort we can by donating clothes,
-              food, medicine and money.
+        {/* Right Section */}
+        <div className="lg:w-[41%] w-full bg-white shadow-xl rounded-3xl overflow-hidden">
+          <div className="h-48 bg-[#22C55E] flex items-center justify-center">
+            <h3 className="text-4xl font-bold text-white">SGC Relief Activities</h3>
+          </div>
+          <div className="p-8">
+            <p className="text-lg leading-relaxed text-gray-700 mb-6">
+              <span className="font-semibold text-[#22C55E]">SGC Relief Activities</span> deals with all donations and relief efforts for the people of Palestine. Our goal is to help the people in need in any way possible, donating clothes, food, medicine, and money.
             </p>
-            <p className="text-lg font-normal pt-4">
-              We with our partner Shaib Abi Talib want to make the most
-              difference.
+            <p className="text-lg leading-relaxed text-gray-700">
+              Together with our partner <span className="font-semibold text-[#22C55E]">Shaib Abi Talib</span>, we aim to make a significant difference.
             </p>
 
-            <div className="flex flex-row justify-between items-start ">
-              <p className="text-xl font-semibold pt-4">
+            <div className="flex justify-between items-center mt-8">
+              <p className="text-xl font-semibold text-gray-800">
                 Check out our Services!
               </p>
 
               <Link href="">
                 <div
-                  className="flex flex-row gap-4 w-32 justify-center items-center p-3 bg-[#22C55E] text-white rounded-full ml-auto font-semibold hover:bg-[#D0312D] hover:text-[#fff] transition-all ease-in-out duration-200 "
-                  style={{
-                    boxShadow: "0px 10px 30px rgba(0,0,0,.2)",
-                  }}
+                  className="px-6 py-3 bg-[#22C55E] text-white rounded-full font-semibold shadow-md hover:bg-[#D0312D] transition duration-300"
                 >
-                  <p>Services</p>
+                  Services
                 </div>
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </span>
+    </div>
   );
 }

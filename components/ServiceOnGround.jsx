@@ -10,7 +10,7 @@ export default function Service() {
           <Link href="groundActivities">
             <div
               className="w-80 h-80 rounded-2xl shadow-lg bg-cover bg-center flex flex-col justify-end"
-              style={{ backgroundImage: `url(/samplePic.jpg)` }}
+              style={{ backgroundImage: `url(/nozi.jpg)` }}
             ></div>
           </Link>
         </span>
