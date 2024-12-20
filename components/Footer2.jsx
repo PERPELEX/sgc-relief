@@ -1,6 +1,7 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -41,35 +42,29 @@ const Footer = () => {
         {/* Logo and Social Links */}
         <div className="lg:col-span-1">
           <h1 className="text-xl lg:text-2xl font-bold mb-3 flex items-center">
-            <img src="./save-gaza-logo.png" className="w-8 mr-4" alt="Logo" />
+            <Image
+              src="/save-gaza-logo.png"
+              width={32}
+              height={32}
+              className="w-8 mr-4"
+              alt="Logo"
+            />
             <span className="text-[#2b9150]">Save Gaza Campaign</span>
           </h1>
           <p className="text-gray-400 mb-5">Stand for Gaza & Unite for Gaza</p>
           <div className="flex space-x-4 mt-4 sm:mt-8">
-            <a
-              href="#"
-              className="text-2xl lg:text-3xl text-gray-400 hover:text-blue-600 transition-colors duration-200 ease-in-out"
-            >
+            <span className="text-2xl lg:text-3xl text-gray-400 hover:text-blue-600 transition-colors duration-200 ease-in-out">
               <i className="fab fa-facebook"></i>
-            </a>
-            <a
-              href="#"
-              className="text-2xl lg:text-3xl text-gray-400 hover:text-red-500 transition-colors duration-200 ease-in-out"
-            >
+            </span>
+            <span className="text-2xl lg:text-3xl text-gray-400 hover:text-red-500 transition-colors duration-200 ease-in-out">
               <i className="fa-brands fa-youtube ml-4 lg:ml-8"></i>
-            </a>
-            <a
-              href="#"
-              className="text-2xl lg:text-3xl text-gray-400 hover:text-blue-400 transition-colors duration-200 ease-in-out"
-            >
+            </span>
+            <span className="text-2xl lg:text-3xl text-gray-400 hover:text-blue-400 transition-colors duration-200 ease-in-out">
               <i className="fab fa-twitter ml-4 lg:ml-8"></i>
-            </a>
-            <a
-              href="#"
-              className="text-2xl lg:text-3xl text-gray-400 hover:text-pink-700 transition-colors duration-200 ease-in-out"
-            >
+            </span>
+            <span className="text-2xl lg:text-3xl text-gray-400 hover:text-pink-700 transition-colors duration-200 ease-in-out">
               <i className="fa-brands fa-instagram ml-4 lg:ml-8"></i>
-            </a>
+            </span>
           </div>
         </div>
 
@@ -79,46 +74,46 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-2">
             <ul>
               <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <span className="text-gray-400 hover:text-white cursor-pointer">
                   Home
-                </a>
+                </span>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <span className="text-gray-400 hover:text-white cursor-pointer">
                   Services
-                </a>
+                </span>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <span className="text-gray-400 hover:text-white cursor-pointer">
                   Contact
-                </a>
+                </span>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <span className="text-gray-400 hover:text-white cursor-pointer">
                   Our Goals
-                </a>
+                </span>
               </li>
             </ul>
             <ul>
               <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <span className="text-gray-400 hover:text-white cursor-pointer">
                   About Us
-                </a>
+                </span>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <span className="text-gray-400 hover:text-white cursor-pointer">
                   Leaders
-                </a>
+                </span>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <span className="text-gray-400 hover:text-white cursor-pointer">
                   Latest News
-                </a>
+                </span>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <span className="text-gray-400 hover:text-white cursor-pointer">
                   Press Release
-                </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -151,21 +146,21 @@ const Footer = () => {
           <span className="text-[#2b9150]">Save Gaza Campaign</span>
         </p>
         <div className="space-x-4">
-          <a href="#" className="text-gray-400 hover:text-white">
+          <span className="text-gray-400 hover:text-white cursor-pointer">
             Home
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white">
+          </span>
+          <span className="text-gray-400 hover:text-white cursor-pointer">
             Terms
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white">
+          </span>
+          <span className="text-gray-400 hover:text-white cursor-pointer">
             Privacy
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white">
+          </span>
+          <span className="text-gray-400 hover:text-white cursor-pointer">
             Policy
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white">
+          </span>
+          <span className="text-gray-400 hover:text-white cursor-pointer">
             Contact
-          </a>
+          </span>
         </div>
       </div>
     </footer>

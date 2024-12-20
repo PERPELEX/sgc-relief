@@ -44,17 +44,17 @@ const AllActivities = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="flex flex-col items-center bg-white shadow-2xl  pb-8 gap-8 poppins">
+    <div className="flex flex-col items-center bg-[#22C55E] shadow-lg poppins rounded-2xl rounded-t-[2rem] ">
       {/* Tab Bar */}
-      <div className="w-[100%] flex flex-row justify-center bg-[#111] py-6 rounded-b-2xl ">
+      <div className="w-[100%] flex flex-row justify-center bg-[#22C55E] py-4 rounded-[2rem] ">
         <div className="w-[80%] flex flex-row justify-center items-center">
           {activitiesData.map((data, index) => (
             <button
               key={index}
-              className={`min-w-60 py-4 px-6 transition-colors duration-200 text-xl font-semibold border-[#eee] ${
+              className={` min-w-60 py-4 px-6 transition-colors duration-200 text- font-semibold border-[#ddd] ${
                 activeTab === index
                   ? "bg-[#ca3e3c] shadow-2xl"
-                  : "bg-[#22C55E] hover:bg-[#2ca157]"
+                  : "bg-[#fff] text-black hover:bg-[#e1afae]"
               } ${
                 index === 0
                   ? "border-r rounded-l-3xl"
@@ -72,7 +72,7 @@ const AllActivities = () => {
 
       {/* Content Section for Active Tab */}
       {activitiesData[activeTab] && (
-        <div className="w-full px-16 flex flex-col md:flex-row gap-20 justify-between items-center">
+        <div className="w-full p-16 flex flex-col md:flex-row gap-20 justify-between items-center bg-white rounded-t-[2rem] rounded-2xl">
           {/* Carousel Section */}
           <div className="w-full md:w-[30%]">
             <Slider {...sliderSettings}>
@@ -104,9 +104,9 @@ const AllActivities = () => {
               </p>
             </div>
 
-            <div className="flex justify-end mt-4">
+            <div className="flex  mt-4">
               <Link href={`/${activitiesData[activeTab].url}`}>
-                <span className="text-xl py-4 px-12 bg-[#22C55E] text-white text-center rounded-3xl font-semibold hover:bg-[#D0312D] transition-all ease-in-out duration-200">
+                <span className="text-lg py-4 px-8 bg-[#22C55E] text-white text-center rounded-3xl font-semibold hover:bg-[#D0312D] transition-all ease-in-out duration-200">
                   Donate Now
                 </span>
               </Link>
