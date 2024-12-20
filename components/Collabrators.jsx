@@ -5,9 +5,9 @@ export default function Collab() {
   return (
     <div>
       <Heading text="Our Collabrators" className="text-black" />
-      <div className="px-12 bg-[#22C55E] rounded-2xl shadow-lg">
-        <div className="flex flex-col justify-between items-center p-10 px-20 bg-white  rounded-[2rem] text-black gap-10">
-          <p className="text-lg">
+      <div className="px-4 md:px-12 bg-[#22C55E] rounded-2xl shadow-lg">
+        <div className="flex flex-col justify-between items-center p-6 md:p-10 md:px-20 bg-white rounded-[2rem] text-black gap-6 md:gap-10">
+          <p className="text-sm md:text-lg">
             We are collaborating with{" "}
             <span className="font-semibold">Shab-e-AbiTalib</span> and{" "}
             <span className="font-semibold">Friends of Palestine</span> to
@@ -17,7 +17,7 @@ export default function Collab() {
             assistance. We are committed to doing everything in our power to
             support this vital cause.
           </p>
-          <div className="flex flex-row justify-between items-center w-full px-20">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-6 md:gap-0 px-0 md:px-20">
             <span>
               <Image
                 src="/save-gaza-logo.png"

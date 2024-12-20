@@ -37,9 +37,12 @@ const ServicesData = [
 
 export default function Services() {
   return (
-    <div id="services" className="w-[100%] h-auto bg-graphite ">
-      <Heading text="Our Services" className="text-black text-center" />
-      <div className="flex flex-col  gap-32 mt-24">
+    <div id="services" className="w-full h-auto bg-graphite p-4 md:p-8">
+      <Heading
+        text="Our Services"
+        className="text-black text-center mb-8 md:mb-16"
+      />
+      <div className="flex flex-col gap-16 md:gap-32 mt-8 md:mt-24">
         <ServiceDirectAid />
         <ServiceSubscriptionAdoption />
         <ServiceOnGround />
