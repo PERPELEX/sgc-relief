@@ -29,9 +29,10 @@ const services = [
 ];
 
 const SubServices = () => {
-  const serviceModule = services.map((service) => {
+  const serviceModule = services.map((service, index) => {
     return (
       <SubService
+        key={index}
         title={service.title}
         description={service.description}
         bgColor={service.bgColor}

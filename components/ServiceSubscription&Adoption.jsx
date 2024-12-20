@@ -47,8 +47,8 @@ export default function ServiceSubscriptionAdoption() {
                 Virtually Adopt a Child in Gaza
               </p>
               <p className="font-light">
-                Through SGC Virtual Adoption, you can provide for a child's
-                needs in Gaza. Your support will cover essentials such as food,
+                Through SGC Virtual Adoption, you can provide for a childs needs
+                in Gaza. Your support will cover essentials such as food,
                 clothing, and education, making a significant impact on their
                 life and future.
               </p>

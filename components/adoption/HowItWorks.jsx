@@ -21,7 +21,7 @@ const HowItWorks = () => {
               </h3>
               <p className="text-gray-600">
                 Fill the Form to provide us with your details. This will help us
-                in contacting you and sending Monthly reminders.
+                in contacting you and sending you profiles.
               </p>
             </div>
 
@@ -55,9 +55,9 @@ const HowItWorks = () => {
                 Verification
               </h3>
               <p className="text-gray-600">
-                Once you have made your monthly donation, please send us the
-                receipt in the form of a screenshot on WhatsApp. This helps us
-                keep track of donations and provide you with updates.
+                After you have made you desicion we will get you in direct
+                contact with the kid so, you can directly help them and bear
+                their expeses.
               </p>
             </div>
 
@@ -97,8 +97,8 @@ const HowItWorks = () => {
                 Contact
               </h3>
               <p className="text-gray-600">
-                Our team will reach out to you on the 5th of every month to
-                provide you updates and reminde you of your monthly donation.
+                Once you have filled the form we will contact you and share
+                information about childern who need adoption.
               </p>
             </div>
 
