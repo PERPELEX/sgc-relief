@@ -42,6 +42,11 @@ export default function App({ Component, pageProps }) {
         <FaWhatsapp size={50} />
       </Link>
 
+      <Head>
+        <link rel="icon" href="/save-gaza-logo.png" />
+        <title>Save Gaza Campaign</title>
+      </Head>
+
       <Headroom>
         <Header3 />
       </Headroom>

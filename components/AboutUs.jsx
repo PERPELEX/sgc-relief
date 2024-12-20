@@ -6,8 +6,11 @@ export default function AboutUs() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <span>
-      <Heading className="mb-8 text-[#1a1a1a]" text="About Us" />
+    <div className="py-12 bg-blue-50">
+      <Heading
+        className="mb-10 text-[#1a1a1a] text-5xl font-extrabold text-center"
+        text="About Us"
+      />
 
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         {/* left */}
@@ -100,13 +103,13 @@ export default function AboutUs() {
                     boxShadow: "0px 10px 30px rgba(0,0,0,.2)",
                   }}
                 >
-                  <p>Services</p>
+                  Services
                 </div>
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </span>
+    </div>
   );
 }
