@@ -18,31 +18,13 @@ export default function Collab() {
             support this vital cause.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center w-full gap-6 md:gap-0 px-0 md:px-20">
-            <span>
-              <Image src="/fop.jpg" width={180} height={180} alt="logo" />
-            </span>
-            <span className="flex justify-center items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="size-10 text-[#2b9150]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </span>
-            <span>
+            <span className="rounded-full border-4 border-[#22C55E] ">
               <Image
-                src="/save-gaza-logo.png"
-                width={160}
-                height={160}
+                src="/fop.jpg"
+                width={180}
+                height={180}
                 alt="logo"
+                className="rounded-full"
               />
             </span>
             <span className="flex justify-center items-center">
@@ -61,10 +43,41 @@ export default function Collab() {
                 />
               </svg>
             </span>
-            <span>
-              <Image src="/shab-logo.png" width={150} height={150} alt="logo" />
+            <span className="rounded-full border-4 border-[#22C55E] p-2">
+              <Image
+                src="/save-gaza-logo.png"
+                width={160}
+                height={160}
+                alt="logo"
+                className="rounded-full"
+              />
             </span>
-          </div>
+            <span className="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="size-10 text-[#2b9150]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </span>
+            <span className="rounded-full border-4 border-[#22C55E] p-4">
+              <Image
+                src="/shab-logo.png"
+                width={150}
+                height={150}
+                alt="logo"
+                className="rounded-full"
+              />
+            </span>
+          </div>{" "}
         </div>
       </div>
     </div>

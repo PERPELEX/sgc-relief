@@ -166,8 +166,9 @@ const HowItWorks = () => {
         <h4 className="text-sm font-light text-gray-400 text-center">
           <span className="font-medium">Note: </span>
           <span>
-            Any money donated to SGC will be directly used for assistance and
-            monetary help of Gazans and in no way will be used on campaign.
+            Any money donated to SGC through this website will be directly used
+            for assistance and monetary help of Gazans and in no way will be
+            used on campaign.
           </span>
         </h4>
       </div>

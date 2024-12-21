@@ -16,21 +16,27 @@ export default function HelpCounter() {
       endValue: 20000,
       label: "Meals Fed",
       duration: "5",
-      icon: <FontAwesomeIcon icon={faUtensils} className="size-10" />,
+      icon: (
+        <FontAwesomeIcon icon={faUtensils} className="size-10 text-[#22C55E]" />
+      ),
     },
     {
       id: 2,
       endValue: 17600,
       label: "Clothes Donated",
       duration: "5",
-      icon: <FontAwesomeIcon icon={faTshirt} className="size-10" />,
+      icon: (
+        <FontAwesomeIcon icon={faTshirt} className="size-10 text-[#22C55E]" />
+      ),
     },
     {
       id: 3,
       endValue: 4500,
       label: "Medically Assisted",
       duration: "5",
-      icon: <FontAwesomeIcon icon={faMedkit} className="size-10" />,
+      icon: (
+        <FontAwesomeIcon icon={faMedkit} className="size-10 text-[#22C55E]" />
+      ),
     },
   ];
 
@@ -55,9 +61,9 @@ export default function HelpCounter() {
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
             />
           )}
-          <span className="mt-2 text-sm sm:text-base md:text-lg text-center">
+          <span className="mt-2 text-sm sm:text-base md:text-lg text-center  ">
             {counter.label}
-            <span className="text-xs sm:text-sm md:text-base font-mono">
+            <span className="text-xs sm:text-sm md:text-base font-mono text-[#22C55E]">
               {" "}
               / Month
             </span>

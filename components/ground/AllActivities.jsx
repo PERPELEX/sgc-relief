@@ -47,7 +47,7 @@ const AllActivities = () => {
     <div className="flex flex-col items-center bg-[#22C55E] shadow-lg poppins rounded-2xl rounded-t-[2rem] p-4 md:p-8">
       {/* Tab Bar */}
       <div className="w-full flex flex-row justify-center bg-[#22C55E] py-4 rounded-[2rem]">
-        <div className="w-full md:w-[80%] grid grid-cols-2 md:flex md:flex-row justify-center items-center flex-wrap gap-2 md:gap-0">
+        <div className="w-full md:w-[80%] grid grid-cols-2 lg:flex lg:flex-row justify-center items-center flex-wrap gap-2 lg:gap-0">
           {activitiesData.map((data, index) => (
             <button
               key={index}
@@ -57,11 +57,11 @@ const AllActivities = () => {
                   : "bg-[#fff] text-black hover:bg-[#e1afae]"
               } ${
                 index === 0
-                  ? "border-r md:rounded-l-3xl"
+                  ? "border-r lg:rounded-l-3xl"
                   : index === activitiesData.length - 1
-                  ? "border-l md:rounded-r-3xl"
+                  ? "border-l lg:rounded-r-3xl"
                   : "border-x"
-              } rounded-lg md:rounded-none`}
+              } rounded-lg lg:rounded-none`}
               onClick={() => setActiveTab(index)}
             >
               {data.name}

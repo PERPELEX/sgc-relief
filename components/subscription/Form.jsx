@@ -3,8 +3,6 @@ import React, { useState } from "react";
 const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
-    age: "",
-    gender: "",
     email: "",
     contact: "",
   });
@@ -21,7 +19,7 @@ const Form = () => {
   };
 
   return (
-    <div>
+    <div id="form">
       <div className="mb-8 text-center flex flex-col justify-center items-center gap-2">
         <h2 className="text-4xl font-bold text-[#22C55E] ">
           Subscription Form
@@ -41,43 +39,6 @@ const Form = () => {
               placeholder="Enter your name"
               required
             />
-          </div>
-          <div>
-            <label className="block text-gray-700 font-medium mb-2">Age</label>
-            <input
-              type="number"
-              name="age"
-              value={formData.age}
-              onChange={handleChange}
-              className="w-full p-3 border border-gray-300 rounded-lg text-black placeholder-gray-300"
-              placeholder="Enter your age"
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Gender
-            </label>
-            <select
-              name="gender"
-              value={formData.gender}
-              onChange={handleChange}
-              className="w-full p-3 border border-gray-300 rounded-lg text-black placeholder-gray-300"
-              required
-            >
-              <option value="" className="text-gray-600">
-                Select Gender
-              </option>
-              <option value="male" className="text-black">
-                Male
-              </option>
-              <option value="female" className="text-black">
-                Female
-              </option>
-              <option value="other" className="text-black">
-                Other
-              </option>
-            </select>
           </div>
           <div>
             <label className="block text-gray-700 font-medium mb-2">

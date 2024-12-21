@@ -39,7 +39,7 @@ export default function Services() {
   return (
     <div id="services" className="w-full h-auto bg-graphite ">
       <Heading
-        text="Our Services"
+        text="Our Activities"
         className="text-black text-center mb-8 md:mb-16"
       />
       <div className="flex flex-col gap-16 md:gap-32 mt-8 md:mt-24">
