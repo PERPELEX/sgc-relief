@@ -23,7 +23,7 @@ const FAQs = () => {
   // Custom Previous Button
   const PrevArrow = ({ onClick }) => (
     <button
-      className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-green-700 text-white p-2 rounded-full shadow hover:bg-[#22C55E] transition-all ease-in-out duration-200"
+      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-green-700 text-white p-2 rounded-full shadow hover:bg-[#22C55E] transition-all ease-in-out duration-200"
       onClick={onClick}
       style={{ zIndex: 1 }}
     >
@@ -34,7 +34,7 @@ const FAQs = () => {
   // Custom Next Button
   const NextArrow = ({ onClick }) => (
     <button
-      className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-700 text-white p-2 rounded-full shadow hover:bg-[#22C55E] transition-all ease-in-out duration-200"
+      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-green-700 text-white p-2 rounded-full shadow hover:bg-[#22C55E] transition-all ease-in-out duration-200"
       onClick={onClick}
       style={{ zIndex: 1 }}
     >
@@ -63,25 +63,25 @@ const FAQs = () => {
       <div className="bg-white py-12 px-4 sm:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between shadow-lg rounded-2xl relative">
         {/* Text Section */}
         <div className="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
-          <h2 className="text-3xl font-bold text-gray-800 mb-1">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
             Sava Gaza Campaign
           </h2>
-          <p className="text-gray-600 mb-6 ">
+          <p className="text-gray-600 mb-4 text-sm sm:text-base">
             has chosen to collaborate with Shaib Abi Talib for more targeted and
             effective assistance.
           </p>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-4 text-sm sm:text-base">
             This partnership allows us to reach individuals on a smaller scale,
             directly meeting their immediate and unique needs, making it the
             most efficient approach in these circumstances.
           </p>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-4 text-sm sm:text-base">
             All Questions related to Campaign are welcomed. While most
             frequently asked questions are answered here, you can ask any other
             questions related to campaign through contacting us by clicking on
-            button below.
+            the button below.
           </p>
-          <div className="flex flex-row justify-end">
+          <div className="hidden md:flex justify-center lg:justify-start">
             <Link
               href=""
               className="bg-white border-2 border-[#22C55E] text-[#22C55E] px-6 py-3 font-semibold rounded-full hover:bg-[#22C55E] hover:text-white transition-all ease-in-out duration-200"
@@ -92,7 +92,7 @@ const FAQs = () => {
         </div>
 
         {/* Carousel Section */}
-        <div className="lg:w-[40%] max-h-[50%]">
+        <div className="w-full lg:w-[40%] max-h-[50%]">
           <Slider {...sliderSettings}>
             {images.map((image, index) => (
               <div key={index} className="px-2">
@@ -101,7 +101,7 @@ const FAQs = () => {
                   height={1000}
                   src={image}
                   alt={`Slide ${index + 1}`}
-                  className="w-full rounded-lg shadow-lg"
+                  className="w-full rounded-lg shadow-lg object-cover"
                 />
               </div>
             ))}
