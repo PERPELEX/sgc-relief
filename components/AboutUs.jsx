@@ -14,14 +14,14 @@ export default function AboutUs() {
 
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         {/* left */}
-        <div className="w-full md:w-[57%] h-auto md:h-[60vh] rounded-2xl bg-[#fff] shadow-lg text-black p-8">
-          <h3 className="text-3xl md:text-5xl text-center">
+        <div className="w-full md:w-[57%] h-auto md:h-[60vh] rounded-2xl bg-[#fff] shadow-lg text-black">
+          <h3 className="text-3xl md:text-5xl text-center bg-[#22C55E] p-6 rounded-t-2xl text-white">
             Save Gaza Campaign
           </h3>
+          {/* 
+          <hr className="border-2 rounded-2xl my-4 border-[#22C55E]" /> */}
 
-          <hr className="border-2 rounded-2xl my-4 border-[#22C55E]" />
-
-          <div className="flex flex-col h-auto md:h-[80%] justify-evenly">
+          <div className="flex flex-col h-auto md:h-[80%] justify-evenly p-8">
             <p className="text-sm md:text-lg font-normal pt-4">
               <span className="font-semibold text-[#22C55E]">
                 Save Gaza Campaign
@@ -69,14 +69,14 @@ export default function AboutUs() {
         </div>
 
         {/* right */}
-        <div className="w-full md:w-[41%] h-auto md:h-[70vh] rounded-2xl bg-[#fff] text-black shadow-lg p-8">
-          <h3 className="text-3xl md:text-4xl text-center">
+        <div className="w-full md:w-[41%] h-auto md:h-[70vh] rounded-2xl bg-[#fff] text-black shadow-lg ">
+          <h3 className="text-3xl md:text-4xl text-center bg-[#22C55E] rounded-t-2xl p-4 text-white">
             SGC Relief Activities
           </h3>
 
-          <hr className="border-2 rounded-2xl my-3 border-[#22C55E]" />
+          {/* <hr className="border-2 rounded-2xl my-3 border-[#22C55E]" /> */}
 
-          <div className="flex flex-col h-auto md:h-[80%] justify-evenly ">
+          <div className="flex flex-col h-auto md:h-[80%] justify-evenly p-8">
             <p className="text-sm md:text-lg font-normal pt-4">
               <span className="font-semibold text-[#22C55E]">
                 SGC Relief Activities

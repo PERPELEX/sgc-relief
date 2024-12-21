@@ -42,7 +42,7 @@ const HelpCounter = () => {
   };
 
   return (
-    <div className="bg-[#E6F7E6] h-[30vh] max-h-[300px] min-h-[250px] px-28 flex flex-col justify-center gap-10">
+    <div className="hidden  bg-[#E6F7E6] h-[30vh] max-h-[300px] min-h-[250px] px-28 md:flex flex-col justify-center gap-10">
       <div className="flex flex-row justify-between items-center">
         {counters.map((counter) => (
           <CounterBox key={counter.id} counter={counter} />

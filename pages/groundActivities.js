@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Wrapper from "@/components/Wrapper";
 import HeadingCard from "@/components/ground/HeadingCard";
 import AllActivities from "@/components/ground/AllActivities";
-import Collabrators from "@/components/Collabrators";
+import Collabrators from "@/components/ground/Collab";
 
 export default function Home() {
   return (

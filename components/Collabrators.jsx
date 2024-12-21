@@ -19,15 +19,50 @@ export default function Collab() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center w-full gap-6 md:gap-0 px-0 md:px-20">
             <span>
+              <Image src="/fop.jpg" width={180} height={180} alt="logo" />
+            </span>
+            <span className="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="size-10 text-[#2b9150]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </span>
+            <span>
               <Image
                 src="/save-gaza-logo.png"
-                width={200}
-                height={200}
+                width={160}
+                height={160}
                 alt="logo"
               />
             </span>
+            <span className="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="size-10 text-[#2b9150]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </span>
             <span>
-              <Image src="/shab-logo.png" width={180} height={180} alt="logo" />
+              <Image src="/shab-logo.png" width={150} height={150} alt="logo" />
             </span>
           </div>
         </div>

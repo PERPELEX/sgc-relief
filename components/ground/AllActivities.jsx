@@ -44,24 +44,24 @@ const AllActivities = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="flex flex-col items-center bg-[#22C55E] shadow-lg poppins rounded-2xl rounded-t-[2rem] ">
+    <div className="flex flex-col items-center bg-[#22C55E] shadow-lg poppins rounded-2xl rounded-t-[2rem] p-4 md:p-8">
       {/* Tab Bar */}
-      <div className="w-[100%] flex flex-row justify-center bg-[#22C55E] py-4 rounded-[2rem] ">
-        <div className="w-[80%] flex flex-row justify-center items-center">
+      <div className="w-full flex flex-row justify-center bg-[#22C55E] py-4 rounded-[2rem]">
+        <div className="w-full md:w-[80%] grid grid-cols-2 md:flex md:flex-row justify-center items-center flex-wrap gap-2 md:gap-0">
           {activitiesData.map((data, index) => (
             <button
               key={index}
-              className={` min-w-60 py-4 px-6 transition-colors duration-200 text- font-semibold border-[#ddd] ${
+              className={`min-w-[120px] py-2 px-4 md:py-4 md:px-6 transition-colors duration-200 text-sm md:text-base font-semibold border-[#ddd] ${
                 activeTab === index
                   ? "bg-[#ca3e3c] shadow-2xl"
                   : "bg-[#fff] text-black hover:bg-[#e1afae]"
               } ${
                 index === 0
-                  ? "border-r rounded-l-3xl"
+                  ? "border-r md:rounded-l-3xl"
                   : index === activitiesData.length - 1
-                  ? "border-l rounded-r-3xl"
+                  ? "border-l md:rounded-r-3xl"
                   : "border-x"
-              }`}
+              } rounded-lg md:rounded-none`}
               onClick={() => setActiveTab(index)}
             >
               {data.name}
@@ -72,7 +72,7 @@ const AllActivities = () => {
 
       {/* Content Section for Active Tab */}
       {activitiesData[activeTab] && (
-        <div className="w-full p-16 flex flex-col md:flex-row gap-20 justify-between items-center bg-white rounded-t-[2rem] rounded-2xl">
+        <div className="w-full p-4 md:p-16 flex flex-col md:flex-row gap-10 md:gap-20 justify-between items-center bg-white rounded-t-[2rem] rounded-2xl">
           {/* Carousel Section */}
           <div className="w-full md:w-[30%]">
             <Slider {...sliderSettings}>
@@ -83,7 +83,7 @@ const AllActivities = () => {
                     height={300}
                     src={src}
                     alt={`Slide ${index + 1}`}
-                    className="w-full rounded-2xl "
+                    className="w-full rounded-2xl"
                   />
                 </div>
               ))}
@@ -92,21 +92,21 @@ const AllActivities = () => {
 
           {/* Description Section */}
           <div className="w-full md:w-auto flex flex-col justify-between gap-6">
-            <h3 className="text-5xl font-semibold text-black tracking-wide">
+            <h3 className="text-2xl md:text-5xl font-semibold text-black tracking-wide">
               {activitiesData[activeTab].name}
             </h3>
             <div>
-              <h4 className="text-2xl font-medium text-black mb-2">
+              <h4 className="text-xl md:text-2xl font-medium text-black mb-2">
                 {activitiesData[activeTab].heading}
               </h4>
-              <p className="text-black text-lg">
+              <p className="text-black text-base md:text-lg">
                 {activitiesData[activeTab].text}
               </p>
             </div>
 
-            <div className="flex  mt-4">
+            <div className="flex mt-4">
               <Link href={`/${activitiesData[activeTab].url}`}>
-                <span className="text-lg py-4 px-8 bg-[#22C55E] text-white text-center rounded-3xl font-semibold hover:bg-[#D0312D] transition-all ease-in-out duration-200">
+                <span className="text-base md:text-lg py-2 md:py-4 px-4 md:px-8 bg-[#22C55E] text-white text-center rounded-3xl font-semibold hover:bg-[#D0312D] transition-all ease-in-out duration-200">
                   Donate Now
                 </span>
               </Link>
