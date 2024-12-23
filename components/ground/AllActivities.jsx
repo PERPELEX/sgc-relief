@@ -92,11 +92,11 @@ const AllActivities = () => {
 
           {/* Description Section */}
           <div className="w-full md:w-auto flex flex-col justify-between gap-6">
-            <h3 className="text-2xl md:text-5xl font-semibold text-black tracking-wide">
+            <h3 className="text-2xl md:text-4xl font-semibold text-black tracking-wide">
               {activitiesData[activeTab].name}
             </h3>
             <div>
-              <h4 className="text-xl md:text-2xl font-medium text-black mb-2">
+              <h4 className="text-xl md:text-xl font-medium text-black mb-2">
                 {activitiesData[activeTab].heading}
               </h4>
               <p className="text-black text-base md:text-lg">

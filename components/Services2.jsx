@@ -43,7 +43,7 @@ export default function Services() {
         className="text-black text-center mb-8 md:mb-16"
       />
       <div className="flex flex-col gap-16 md:gap-32 mt-8 md:mt-24">
-        <ServiceDirectAid />
+        {/* <ServiceDirectAid /> */}
         <ServiceSubscriptionAdoption />
         <ServiceOnGround />
       </div>

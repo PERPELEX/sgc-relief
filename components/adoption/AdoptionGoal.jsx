@@ -17,7 +17,7 @@ const AdoptionGoal = () => {
         </div>
         <div className="relative -top-10 left-0 md:left-10 w-48 h-32 md:w-72 md:h-48">
           <Image
-            src="/samplePic.jpg"
+            src="/adoption/a1.jpg"
             alt="Child 2"
             layout="fill"
             objectFit="cover"
@@ -61,11 +61,11 @@ const AdoptionGoal = () => {
             direct communication with the child
           </li>
         </ul>
-        <div className="flex justify-center md:justify-start">
+        {/* <div className="flex justify-center md:justify-start">
           <button className="bg-[#22C55E] text-white px-4 md:px-6 py-2 md:py-3 rounded-md hover:bg-[#1da44e] transition-all ease-in-out duration-200">
             Adopt
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

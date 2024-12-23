@@ -3,21 +3,21 @@ import Image from "next/image";
 
 const AboutUsSection = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-6 p-4 py-10 md:p-8 bg-white rounded-2xl shadow-lg">
+    <div className="flex flex-col md:flex-row items-center gap-6 p-4 py-10 md:p-8 bg-white rounded-2xl shadow-lg z-0">
       {/* Images Section */}
       <div className="flex flex-col items-center justify-center md:w-1/2">
-        <div className="relative w-64 h-64 md:-left-28 md:top-10 md:w-80 md:h-80">
+        <div className="relative w-64 h-64 md:-left-28 md:top-10 md:w-80 md:h-80 z-10">
           <Image
-            src="/samplePic.jpg"
+            src="/subscription/a3.jpg"
             alt="Child 1"
             layout="fill"
             objectFit="cover"
             className="rounded-md shadow-lg"
           />
         </div>
-        <div className="relative -top-10 left-0 md:left-10 w-48 h-32 md:w-72 md:h-48">
+        <div className="relative -top-10 left-0 md:left-10 w-48 h-32 md:w-72 md:h-48 z-20 md:z-0 ">
           <Image
-            src="/samplePic.jpg"
+            src="/subscription/a2.jpg"
             alt="Child 2"
             layout="fill"
             objectFit="cover"
@@ -59,11 +59,11 @@ const AboutUsSection = () => {
             families with financial aid
           </li>
         </ul>
-        <div className="flex justify-center md:justify-start">
+        {/* <div className="flex justify-center md:justify-start">
           <button className="bg-[#22C55E] text-white px-4 md:px-6 py-2 md:py-3 rounded-md hover:bg-[#D0312D] transition-all ease-in-out duration-200">
             Learn More
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
