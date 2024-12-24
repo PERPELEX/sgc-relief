@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 const AdoptionHero = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,15 +27,17 @@ const AdoptionHero = () => {
           healthcare, and daily needs, ensuring they have a brighter future.
         </p>
         {/* Button */}
-        <button
-          className={`mt-8 px-6 sm:px-8 py-2 sm:py-3 text-lg sm:text-xl rounded-full font-medium flex flex-row justify-center items-center gap-2 transition-all duration-200 ${
-            isHovered ? "bg-red-500 text-white" : "bg-[#fff] text-black"
-          }`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          <p>Adopt</p>
-        </button>
+        <Link href="virtualAdoption#adopt">
+          <button
+            className={`mt-8 px-6 sm:px-8 py-2 sm:py-3 text-lg sm:text-xl rounded-full font-medium flex flex-row justify-center items-center gap-2 transition-all duration-200 ${
+              isHovered ? "bg-red-500 text-white" : "bg-[#fff] text-black"
+            }`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <p>Adopt</p>
+          </button>
+        </Link>
       </div>
     </div>
   );

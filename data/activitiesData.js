@@ -10,6 +10,8 @@ export const activitiesData = [
     heading: "Providing Hot Meals to All",
     text: "SGC Food Camps serve hot meals daily to those in need in Gaza. Join us in supporting the community with compassion and care.",
     url: "FoodCamps",
+    phoneNumber: "+923325900041",
+    message: "Hello, I would like to donate for the Food Camps through SGC.",
   },
   {
     img: ["/ground/m1.jpg", "/ground/m2.jpg", "/ground/m3.jpg"],
@@ -17,6 +19,8 @@ export const activitiesData = [
     heading: "Medical Assistance for All",
     text: "SGC Medical Camps provide essential medical services to the residents of Gaza. Help us ensure everyone has access to healthcare.",
     url: "MedicalCamps",
+    phoneNumber: "+923325900041",
+    message: "Hello, I would like to donate for the Medical Camps through SGC.",
   },
   {
     img: [
@@ -30,6 +34,9 @@ export const activitiesData = [
     heading: "Clothing the Needy",
     text: "SGC Cloth Distribution offers clothing to those in need in Gaza. Join us in providing warmth and dignity to the community.",
     url: "ClothDistribution",
+    phoneNumber: "+923325900041",
+    message:
+      "Hello, I would like to donate for the Cloth Distribution through SGC.",
   },
   {
     img: ["/ground/d1.jpg", "/ground/d2.jpg", "/ground/d3.jpg"],
@@ -37,5 +44,7 @@ export const activitiesData = [
     heading: "Financial Support for Families",
     text: "SGC Monetary Aid provides financial assistance to families in Gaza. Your donations help alleviate financial burdens and support livelihoods.",
     url: "MonetaryAid",
+    phoneNumber: "+923325900041",
+    message: "Hello, I would like to donate for the Monetary Aid through SGC.",
   },
 ];

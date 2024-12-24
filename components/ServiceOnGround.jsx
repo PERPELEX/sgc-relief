@@ -33,7 +33,7 @@ export default function Service() {
           </span>
           <Link href="groundActivities">
             <button className="text-xs md:text-lg mt-6 py-3 px-4 rounded-3xl bg-[#22C55E] text-white hover:bg-[#D0312D] transition-all ease-in-out duration-200">
-              View Activities
+              View Details
             </button>
           </Link>
         </div>

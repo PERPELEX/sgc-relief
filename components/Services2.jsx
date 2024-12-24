@@ -37,7 +37,7 @@ const ServicesData = [
 
 export default function Services() {
   return (
-    <div id="services" className="w-full h-auto bg-graphite ">
+    <div id="activities" className="w-full h-auto bg-graphite ">
       <Heading
         text="Our Activities"
         className="text-black text-center mb-8 md:mb-16"

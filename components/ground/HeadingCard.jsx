@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 const HeadingCard = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,29 +27,31 @@ const HeadingCard = () => {
           Join us in making a positive impact and bringing relief to Gaza.
         </p>
         {/* Button */}
-        <button
-          className={`mt-8 px-6 py-3 text-xl rounded-full font-medium flex flex-row justify-center items-center gap-2 transition-all duration-200 ${
-            isHovered ? "bg-red-500" : "bg-white text-black"
-          }`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          <p>View All</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className={`size-6  transition-transform duration-200 ${
-              isHovered ? "animate-move-down" : ""
+        <Link href="/groundActivities#activity">
+          <button
+            className={`mt-8 px-6 py-3 text-xl rounded-full font-medium flex flex-row justify-center items-center gap-2 transition-all duration-200 ${
+              isHovered ? "bg-red-500" : "bg-white text-black"
             }`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           >
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="8 12 12 16 16 12"></polyline>
-            <line x1="12" y1="8" x2="12" y2="16"></line>
-          </svg>
-        </button>
+            <p>View All</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className={`size-6  transition-transform duration-200 ${
+                isHovered ? "animate-move-down" : ""
+              }`}
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="8 12 12 16 16 12"></polyline>
+              <line x1="12" y1="8" x2="12" y2="16"></line>
+            </svg>
+          </button>
+        </Link>
       </div>
     </div>
   );

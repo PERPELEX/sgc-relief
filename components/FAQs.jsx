@@ -83,7 +83,7 @@ const FAQs = () => {
           </p>
           <div className="hidden md:flex justify-center lg:justify-start">
             <Link
-              href=""
+              href="https://www.savegazacampaign.org/contact"
               className="bg-white border-2 border-[#22C55E] text-[#22C55E] px-6 py-3 font-semibold rounded-full hover:bg-[#22C55E] hover:text-white transition-all ease-in-out duration-200"
             >
               Contact Now
@@ -95,7 +95,7 @@ const FAQs = () => {
         <div className="w-full lg:w-[40%] max-h-[50%]">
           <Slider {...sliderSettings}>
             {images.map((image, index) => (
-              <div key={index} className="px-2">
+              <div key={index} className="px-4">
                 <Image
                   width={1000}
                   height={1000}

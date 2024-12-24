@@ -44,7 +44,10 @@ const AllActivities = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="flex flex-col items-center bg-[#22C55E] shadow-lg poppins rounded-2xl rounded-t-[2rem] p-4 md:p-8">
+    <div
+      id="activity"
+      className="flex flex-col items-center bg-[#22C55E] shadow-lg poppins rounded-2xl rounded-t-[2rem] p-4 md:p-8"
+    >
       {/* Tab Bar */}
       <div className="w-full flex flex-row justify-center bg-[#22C55E] py-4 rounded-[2rem]">
         <div className="w-full md:w-[80%] grid grid-cols-2 lg:flex lg:flex-row justify-center items-center flex-wrap gap-2 lg:gap-0">
@@ -105,11 +108,19 @@ const AllActivities = () => {
             </div>
 
             <div className="flex mt-4">
-              <Link href={`/${activitiesData[activeTab].url}`}>
+              <a
+                href={`https://wa.me/${
+                  activitiesData[activeTab].phoneNumber
+                }?text=${encodeURIComponent(
+                  activitiesData[activeTab].message
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="text-base md:text-lg py-2 md:py-4 px-4 md:px-8 bg-[#22C55E] text-white text-center rounded-3xl font-semibold hover:bg-[#D0312D] transition-all ease-in-out duration-200">
                   Donate Now
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
