@@ -26,7 +26,7 @@ export const activitiesData = [
       "/ground/c4.jpg",
       "/ground/c5.jpg",
     ],
-    name: "Cloth Distribution",
+    name: "Winter Drive",
     heading: "Clothing the Needy",
     text: "SGC Cloth Distribution offers clothing to those in need in Gaza. Join us in providing warmth and dignity to the community.",
     url: "ClothDistribution",
@@ -35,7 +35,7 @@ export const activitiesData = [
     img: ["/ground/d1.jpg", "/ground/d2.jpg", "/ground/d3.jpg"],
     name: "Monetary Aid",
     heading: "Financial Support for Families",
-    text: "SGC Monetary Aid provides financial assistance to families in Gaza. Your donations help alleviate financial burdens and support livelihoods.",
+    text: "Join Us and support a family in Gaza. SGC Monetary Aid provides financial assistance to families in Gaza. Your donations help alleviate financial burdens and support livelihoods.",
     url: "MonetaryAid",
   },
 ];

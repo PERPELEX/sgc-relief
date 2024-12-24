@@ -91,19 +91,19 @@ export default function AboutUs() {
               difference.
             </p>
 
-            <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
+            <div className="flex flex-col  justify-center items-center ">
               <p className="text- md:text-xl font-semibold pt-4">
-                Check out our Services!
+                Check out our activities in Gaza!
               </p>
 
               <Link href="">
                 <div
-                  className="text-sm md:text-base flex flex-row gap-4 w-full md:w-32 justify-center items-center px-3 py-2 md:p-3  bg-[#22C55E] text-white rounded-full mt-4 md:mt-0 ml-auto font-semibold hover:bg-[#D0312D] hover:text-[#fff] transition-all ease-in-out duration-200"
+                  className="text-sm md:text-base flex flex-row gap-4 justify-center items-center px-8 py-4  bg-[#22C55E] text-white rounded-full mt-4 font-semibold hover:bg-[#D0312D] hover:text-[#fff] transition-all ease-in-out duration-200"
                   style={{
                     boxShadow: "0px 10px 30px rgba(0,0,0,.2)",
                   }}
                 >
-                  Services
+                  All Activities
                 </div>
               </Link>
             </div>

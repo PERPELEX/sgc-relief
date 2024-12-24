@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
 
       <Head>
         <link rel="icon" href="/save-gaza-logo.png" />
-        <title>Save Gaza Campaign</title>
+        <title>SGC Relief Activities</title>
       </Head>
 
       <Headroom>

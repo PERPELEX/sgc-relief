@@ -64,7 +64,7 @@ export default function Header() {
                 <rect x="3" y="17" width="10" height="2" fill="currentColor" />
               </svg>
             </span>
-            <span className="ml-4">Save Gaza Campaign</span>
+            <span className="ml-4">SGC Relief Activities</span>
           </div>
         </div>
 
