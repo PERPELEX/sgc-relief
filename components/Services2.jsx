@@ -39,13 +39,13 @@ export default function Services() {
   return (
     <div id="activities" className="w-full h-auto bg-graphite ">
       <Heading
-        text="Our Activities"
-        className="text-black text-center mb-8 md:mb-16"
+        text="Join Us in the Mission"
+        className="text-black text-center mb-4 md:mb-16"
       />
       <div className="flex flex-col gap-16 md:gap-32 mt-8 md:mt-24">
         {/* <ServiceDirectAid /> */}
-        <ServiceSubscriptionAdoption />
         <ServiceOnGround />
+        <ServiceSubscriptionAdoption />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import HelpCounter from "@/components/subscription/HelpCounter";
 import HowItWorks from "@/components/subscription/HowItWorks";
 import Form from "@/components/subscription/Form";
 import { activitiesData } from "@/data/activitiesData";
+import Contact from "@/components/adoption/Contact";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         <OurGoal />
         <HowItWorks />
-        <Form />
+        <Contact />
+
       </Wrapper>
     </main>
   );
