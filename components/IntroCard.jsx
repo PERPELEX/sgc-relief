@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const IntroCard = () => {
+  const phoneNumber = "923325000418";
+  const whatsappLink = `https://wa.me/${phoneNumber}`;
+
   return (
     <div
       className="relative h-[90vh] bg-cover bg-center poppins"
@@ -24,12 +27,12 @@ const IntroCard = () => {
             families and helping them.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Link href="">
+          <Link href={whatsappLink} passHref>
               <button className="text-lg md:text-xl font-bold bg-white text-black px-6 md:px-8 py-3 md:py-4 rounded-full shadow-lg hover:bg-[#D0312D] hover:text-white transition-all ease-in-out duration-200">
                 Donate Now
               </button>
             </Link>
-            <Link href="">
+            <Link href={whatsappLink} passHref>
               <button className="text-lg md:text-xl font-bold bg-transparent border-2 border-white px-6 md:px-8 py-3 md:py-4 rounded-full text-white hover:bg-[#D0312D] hover:text-[#fff] hover:border-[#D0312D] transition-all ease-in-out duration-200">
                 Connect with a Family
               </button>

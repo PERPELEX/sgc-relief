@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Contact = () => {
-  const phoneNumber = "+1234567890";
+  const phoneNumber = "923325000418";
   const whatsappLink = `https://wa.me/${phoneNumber}`;
 
   return (
