@@ -15,8 +15,7 @@ export default function Home() {
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         <OurGoal />
         <HowItWorks />
-        <Contact />
-
+        <Form />
       </Wrapper>
     </main>
   );

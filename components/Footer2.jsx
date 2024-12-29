@@ -5,8 +5,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111] text-white py-12">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-10 pb-12 border-b border-gray-700 px-4 lg:px-12">
+    <footer className=" bg-[#111] text-white py-12">
+      {/* Desktop Footer Content */}
+      <div className="hidden md:grid container mx-auto  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-10 pb-12 border-b border-gray-700 px-4 lg:px-12">
         {/* Contact Info */}
         <div className="flex items-start">
           <i className="fa-solid fa-location-dot text-2xl lg:text-3xl text-[#206e3d] mr-4"></i>
@@ -28,7 +29,7 @@ const Footer = () => {
           <i className="fa-solid fa-phone text-2xl lg:text-3xl text-[#2b9150] mr-4"></i>
           <div>
             <h3 className="text-[#2b9150] font-bold mb-3">Call us</h3>
-            <p className="text-gray-400">+92 332 5900041</p>
+            <p className="text-gray-400">++92 332 5900041</p>
           </div>
         </div>
         <div className="flex items-start">
@@ -52,40 +53,6 @@ const Footer = () => {
             <span className="text-[#2b9150]">Save Gaza Campaign</span>
           </h1>
           <p className="text-gray-400 mb-5">Stand for Gaza & Unite for Gaza</p>
-          <div className="flex space-x-4 mt-4 sm:mt-8">
-            <Link
-              href="https://m.facebook.com/SaveGazaCampaign/"
-              className="text-2xl lg:text-3xl text-gray-400 hover:text-blue-600 transition-colors duration-200 ease-in-out"
-            >
-              <i className="fab fa-facebook"></i>
-            </Link>
-            <Link
-              href="https://www.youtube.com/@savegazacampaign"
-              className="text-2xl lg:text-3xl text-gray-400 hover:text-red-500 transition-colors duration-200 ease-in-out"
-            >
-              <i className="fa-brands fa-youtube ml-4 lg:ml-8"></i>
-            </Link>
-            <Link
-              href="https://twitter.com/savegazapk"
-              className="text-2xl lg:text-3xl text-gray-400 hover:text-blue-400 transition-colors duration-200 ease-in-out"
-            >
-              <i className="fab fa-twitter ml-4 lg:ml-8"></i>
-            </Link>
-            <Link
-              href="https://www.instagram.com/savegazacampaign"
-              className="text-2xl lg:text-3xl text-gray-400 hover:text-pink-700 transition-colors duration-200 ease-in-out"
-            >
-              <i className="fa-brands fa-instagram ml-4 lg:ml-8"></i>
-            </Link>
-            <Link
-              href="https://www.linkedin.com/company/save-gaza-campaign?originalSubdomain=pk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl lg:text-3xl text-gray-400 hover:text-blue-700 transition-colors duration-200 ease-in-out"
-            >
-              <i className="fa-brands fa-linkedin ml-4 lg:ml-8"></i>
-            </Link>
-          </div>
         </div>
 
         {/* Useful Links */}
@@ -106,19 +73,6 @@ const Footer = () => {
                   Services
                 </Link>
               </li>
-              <li className="mb-2">
-                <Link
-                  href="/contact"
-                  className="text-gray-400 hover:text-white"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/goals" className="text-gray-400 hover:text-white">
-                  Our Goals
-                </Link>
-              </li>
             </ul>
             <ul>
               <li className="mb-2">
@@ -128,23 +82,10 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <Link
-                  href="/leaders"
+                  href="/contact"
                   className="text-gray-400 hover:text-white"
                 >
-                  Leaders
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/news" className="text-gray-400 hover:text-white">
-                  Latest News
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href="/press-release"
-                  className="text-gray-400 hover:text-white"
-                >
-                  Press Release
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -172,26 +113,43 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="container mx-auto text-center py-6 px-4">
+      <div className="container mx-auto text-center py-6 px-4 hidden md:block">
         <p className="text-gray-400 mb-4">
           Copyright © 2024. All Rights Reserved{" "}
           <span className="text-[#2b9150]">Save Gaza Campaign</span>
         </p>
-        <div className="space-x-4">
-          <Link href="#" className="text-gray-400 hover:text-white">
-            Home
+      </div>
+
+      {/* Mobile Bottom Navigation Bar */}
+      <div className="block md:hidden bg-[#111] border-t border-gray-700 fixed bottom-0 left-0 right-0">
+        <div className="flex justify-around py-3">
+          <Link
+            href="/"
+            className="text-gray-400 hover:text-[#2b9150] text-xl flex flex-col justify-center items-center gap-2"
+          >
+            <i className="fa-solid fa-house-user"></i>
+            <span className="block text-sm">Home</span>
           </Link>
-          <Link href="#" className="text-gray-400 hover:text-white">
-            Terms
+          <Link
+            href="/virtualAdoption"
+            className="text-gray-400 hover:text-[#2b9150] text-xl flex flex-col justify-center items-center gap-2"
+          >
+            <i className="fa-solid fa-child"></i>
+            <span className="block text-sm">Adoption</span>
           </Link>
-          <Link href="#" className="text-gray-400 hover:text-white">
-            Privacy
+          <Link
+            href="/groundActivities"
+            className="text-gray-400 hover:text-[#2b9150] text-xl flex flex-col justify-center items-center gap-2"
+          >
+            <i className="fa-solid fa-hands-helping"></i>
+            <span className="block text-sm">Activities</span>
           </Link>
-          <Link href="#" className="text-gray-400 hover:text-white">
-            Policy
-          </Link>
-          <Link href="#" className="text-gray-400 hover:text-white">
-            Contact
+          <Link
+            href="/subscription"
+            className="text-gray-400 hover:text-[#2b9150] text-xl flex flex-col justify-center items-center gap-2"
+          >
+            <i className="fa-solid fa-calendar"></i>
+            <span className="block text-sm">Subscription</span>
           </Link>
         </div>
       </div>

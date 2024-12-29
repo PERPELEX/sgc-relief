@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ServiceSubscriptionAdoption() {
   return (
-    <div className="flex flex-col gap-12 lg:p-8">
+    <div className="flex flex-col gap-12 ">
       {/* Service Block 1 */}
       <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
         {/* Image */}
@@ -41,7 +41,6 @@ export default function ServiceSubscriptionAdoption() {
 
       {/* Service Block 2 */}
       <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
-        
         {/* Text Box */}
         <div className="bg-white rounded-2xl shadow-lg px-6 py-8 lg:px-16 lg:py-12 w-full">
           <div className="flex flex-col justify-center items-start gap-4 text-black">
@@ -78,8 +77,8 @@ export default function ServiceSubscriptionAdoption() {
   );
 }
 
-
-  {/* <div className="bg-white rounded-2xl shadow-lg px-6 py-8 lg:px-16 lg:py-12 w-full">
+{
+  /* <div className="bg-white rounded-2xl shadow-lg px-6 py-8 lg:px-16 lg:py-12 w-full">
     <div className="flex flex-col justify-center items-start gap-4 text-black">
       <h3 className="text-xl lg:text-3xl font-semibold">
         SGC Virtual Adoption
@@ -101,5 +100,8 @@ export default function ServiceSubscriptionAdoption() {
         </button>
       </Link>
     </div>
-  </div> */}
-{/* </div> */}
+  </div> */
+}
+{
+  /* </div> */
+}

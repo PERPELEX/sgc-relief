@@ -35,11 +35,11 @@ export default function App({ Component, pageProps }) {
     <>
       <Link
         href="https://wa.me/923325000418" // Replace with the actual WhatsApp number
-        className="fixed bottom-14 left-2  rounded-full bg-white/[0.25] text-green-500 duration-200 hover:scale-110 cursor-pointer"
+        className="fixed bottom-14 left-2 z-0  rounded-full bg-white/[0.25] text-green-500 duration-200 hover:scale-110 cursor-pointer"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaWhatsapp size={50} />
+        <FaWhatsapp className="z-0" size={50} />
       </Link>
 
       <Head>
@@ -52,7 +52,6 @@ export default function App({ Component, pageProps }) {
       </Headroom>
 
       <Component {...pageProps} />
-      
 
       <Footer2 />
     </>

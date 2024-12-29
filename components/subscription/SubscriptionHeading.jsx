@@ -6,14 +6,11 @@ const SubscriptionHeading = () => {
 
   return (
     <div
-      className="relative h-[90vh] bg-cover bg-center poppins"
-      style={{ backgroundImage: "url('/subscription/banner.jpg')" }}
+      className=" h-[90vh] bg-cover bg-center poppins"
+      style={{ backgroundImage: "url('/subscription/b1.png')" }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-
       {/* Content */}
-      <div className="relative flex flex-col items-center justify-center h-full text-white px-4 md:px-24">
+      <div className=" flex flex-col items-center justify-center h-full text-white px-4 md:px-24">
         <h3 className="text-sm md:text-lg font-medium tracking-widest uppercase mb-2">
           SGC Monthly Subscription
         </h3>

@@ -14,7 +14,7 @@ export default function Home() {
   const [ref, inView] = useInView();
 
   return (
-    <main className="overflow-hidden w-[100%] z-20">
+    <main className="overflow-hidden w-[100%] z-50">
       <IntroCard />
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         <AboutUs />
