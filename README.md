@@ -13,6 +13,10 @@ A Direct Aid portal allowing people to donate and participate in charity for Sav
 
 The application is fully functional with payment modules and forms made but archived due to client's change of plans. A Frontend heavy application made for SGC client.
 
+## Deployment
+
+https://www.savegazacampaign.org/
+
 ## How to Start
 
 ```bash
